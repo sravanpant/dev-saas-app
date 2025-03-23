@@ -21,9 +21,10 @@ A **real-time** job tracking tool for developers actively job hunting. Manage ap
 
 ### ✅ Week 1 – Setup & Authentication
 
-- [ ] Initialize Next.js 14 project with TypeScript, TailwindCSS, and shadcn/ui  
-- [ ] Set up **Appwrite project** (Auth, Database, Storage)  
-- [ ] Implement **Appwrite Auth** (Sign up, Login, Magic Link)  
+- [x] Initialize Next.js 14 project with TypeScript, TailwindCSS, and shadcn/ui  
+- [x] Set up **Appwrite project** auth
+- [x] Implement **Appwrite Auth** (Login with google)  
+- [ ] Set up **Appwrite project** (Database, Storage)  
 - [ ] Create **protected routes** for dashboard access  
 - [ ] Design base **dashboard layout**  
 
@@ -64,12 +65,12 @@ A **real-time** job tracking tool for developers actively job hunting. Manage ap
 
 ## 🔥 Real-Time Features (Powered by Appwrite)
 
-| Feature                        | Real-Time? | Description                                    |
-|--------------------------------|------------|------------------------------------------------|
-| Drag-and-drop job updates      | ✅ Yes      | Reflects instantly across all sessions        |
-| New job entry creation         | ✅ Yes      | Instantly syncs for logged-in users           |
-| Resume upload & display        | ✅ Yes      | Auto-refreshes once upload completes          |
-| AI-generated job insights      | ✅ Yes      | Updates UI when processing is done            |
+| Feature                   | Real-Time? | Description                            |
+| ------------------------- | ---------- | -------------------------------------- |
+| Drag-and-drop job updates | ✅ Yes      | Reflects instantly across all sessions |
+| New job entry creation    | ✅ Yes      | Instantly syncs for logged-in users    |
+| Resume upload & display   | ✅ Yes      | Auto-refreshes once upload completes   |
+| AI-generated job insights | ✅ Yes      | Updates UI when processing is done     |
 
 ```ts
 // Example: Listen for real-time job updates
