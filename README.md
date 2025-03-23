@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Dev Job Tracker SaaS
 
-## Getting Started
+A smart job tracking tool for developers who are actively job hunting. Manage job applications, upload resumes, track stages (Applied, Interviewing, Offer, Rejected), and get reminders—all in one clean, dev-friendly dashboard.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend:** Next.js 14 (App Router), TypeScript, TailwindCSS, shadcn/ui
+- **Backend:** Node.js + Express or Fastify (Dockerized)
+- **Database:** PostgreSQL + Drizzle ORM
+- **Auth:** Clerk or Auth.js (OAuth/email)
+- **Storage:** UploadThing or Cloudinary (for resume PDFs)
+- **Optional AI:** OpenAI (for resume analysis/suggestions)
+- **Deployment:** Vercel (frontend), Railway/Fly.io (backend + db)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📅 MVP Roadmap (4 Weeks)
 
-## Learn More
+### ✅ Week 1 – Setup & Auth
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] Initialize monorepo or folder structure: `/frontend`, `/backend`
+- [ ] Set up Next.js 14 with TypeScript + Tailwind + shadcn
+- [ ] Dockerize backend (Node.js) and connect to PostgreSQL
+- [ ] Add Drizzle ORM config and first `users` table
+- [ ] Implement Clerk/Auth.js auth (sign up, login, protected routes)
+- [ ] Create base dashboard layout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✅ Week 2 – Core Job Tracker Features
 
-## Deploy on Vercel
+- [ ] Design Job Card UI with fields (title, company, location, etc.)
+- [ ] Add `jobs` table to PostgreSQL
+- [ ] Implement Create Job form (with validation)
+- [ ] Connect frontend form to backend API (create job)
+- [ ] Fetch and display jobs in dashboard grouped by stage
+- [ ] Add drag-and-drop support (DnD Kit)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ✅ Week 3 – Resume Upload + Smart Insights
+
+- [ ] Add resume upload (PDFs via UploadThing or Cloudinary)
+- [ ] Store resume URL in job record
+- [ ] Parse resume (optional: basic AI/NLP tagging with OpenAI)
+- [ ] Add "AI Summary" feature using OpenAI (optional)
+- [ ] Add notes/reminders to each job card
+
+---
+
+### ✅ Week 4 – Polish & Launch
+
+- [ ] Add filters (e.g., by tag, date, job stage)
+- [ ] Add search bar
+- [ ] Mobile responsiveness polish
+- [ ] Deploy frontend to Vercel
+- [ ] Deploy backend to Railway or Fly.io
+- [ ] Connect DB and test full flow end-to-end
+- [ ] Add landing page/marketing site (Next.js static page)
+- [ ] (Optional) Setup Stripe for premium features
+- [ ] Add README badges, screenshots, demo link
+
+---
+
+## 💡 Future Add-ons (Post-MVP Ideas)
+
+- Chrome Extension for 1-click job saving
+- Email follow-up reminders with SendGrid
+- Resume builder/editor tool
+- Analytics dashboard (apps per week, top companies, etc.)
+- Export data as CSV
+- Team plan for batch uploads
+
+---
+
+## 📷 Demo
+
+Coming soon...
+
+---
+
+## 🙌 Contributing
+
+Solo project for now, but open to collabs later. If you’re interested in contributing, feel free to fork and raise a PR!
+
+---
+
+## 📜 License
+
+MIT
