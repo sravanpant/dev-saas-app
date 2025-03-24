@@ -22,9 +22,10 @@ A **real-time** job tracking tool for developers actively job hunting. Manage ap
 ### ✅ Week 1 – Setup & Authentication
 
 - [x] Initialize Next.js 14 project with TypeScript, TailwindCSS, and shadcn/ui  
-- [x] Set up **Appwrite project** auth
+- [x] Set up **Appwrite Auth** 
 - [x] Implement **Appwrite Auth** (Login with google)  
-- [ ] Set up **Appwrite project** (Database, Storage)  
+- [x] Set up **Appwrite Database**
+- [ ] Set up **Appwrite Storage**
 - [ ] Create **protected routes** for dashboard access  
 - [ ] Design base **dashboard layout**  
 
