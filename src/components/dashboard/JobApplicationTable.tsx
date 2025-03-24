@@ -166,7 +166,11 @@ export const JobApplicationTable: React.FC = () => {
               Salary(inr)
             </TableHead>
             <TableHead className="font-bold text-gray-700">Company</TableHead>
+            <TableHead className="font-bold text-gray-700">Location</TableHead>
             <TableHead className="font-bold text-gray-700">Status</TableHead>
+            <TableHead className="font-bold text-gray-700">
+              Applied On
+            </TableHead>
             <TableHead className="font-bold text-gray-700">Actions</TableHead>
           </TableRow>
         </TableHeader>
@@ -186,8 +190,12 @@ export const JobApplicationTable: React.FC = () => {
                 <TableCell>{job.job_role}</TableCell>
                 <TableCell>{job.Salary_lpa_inr} LPA</TableCell>
                 <TableCell>{job.company}</TableCell>
+                <TableCell>{job.location}</TableCell>
                 <TableCell>
                   {renderStatusBadge(job.status as JobApplicationStatus)}
+                </TableCell>
+                <TableCell>
+                  {new Date(job.$createdAt).toLocaleDateString()}
                 </TableCell>
                 <TableCell>
                   <DropdownMenu>
