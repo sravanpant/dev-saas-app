@@ -25,9 +25,10 @@ A **real-time** job tracking tool for developers actively job hunting. Manage ap
 - [x] Set up **Appwrite Auth** 
 - [x] Implement **Appwrite Auth** (Login with google)  
 - [x] Set up **Appwrite Database**
+- [x] Design base **dashboard layout**  
+- [x] Design header and sidebar components
 - [ ] Set up **Appwrite Storage**
 - [ ] Create **protected routes** for dashboard access  
-- [ ] Design base **dashboard layout**  
 
 ---
 
